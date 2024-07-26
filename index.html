@@ -16,6 +16,15 @@
             color: white;
             padding: 10px 0;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
         }
         main {
             padding: 20px;
@@ -29,12 +38,17 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
-        h1 {
+        h1, h2 {
             color: #333;
         }
         p {
             line-height: 1.6;
             color: #666;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
     </style>
     <script>
@@ -46,13 +60,39 @@
 <body>
     <header>
         <h1>Al Daleel Association</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
     <main>
-        <section>
+        <section id="home">
             <h2>Introduction</h2>
             <p>
                 Founded in 2018, Al Daleel Association has become a trusted name in community empowerment and sustainable development in Baalback Hermel. We are dedicated to promoting social justice, gender equality, and human rights. Our work is focused on providing resources, support, and education to marginalized communities across the region.
             </p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Founded in 2018 in Lebanon and registered as a non-profit with the Ministry of Interior (Number 1959), Al Daleel is a local civil organization. Our commitment lies in serving the community, with a particular focus on empowering marginalized groups. We are dedicated to economically and socially empowering women, encouraging their active participation in society. Moreover, our efforts extend to supporting children in their education, fostering their skills, and ensuring their protection and well-being. Al Daleel Association aspires to create a brighter future for the local community through these initiatives.
+            </p>
+            <img src="image.png" alt="About Us">
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Details about the services will go here.</p>
+        </section>
+        <section id="portfolio">
+            <h2>Our Portfolio</h2>
+            <p>Details about the portfolio will go here.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Details about how to contact will go here.</p>
         </section>
     </main>
 </body>
