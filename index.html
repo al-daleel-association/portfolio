@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al Daleel Association</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
@@ -101,7 +102,6 @@
             text-align: center;
             padding: 10px 0;
         }
-
         /* Styles specific to About Us and Our Vision sections */
         .about-content, .vision-content {
             display: flex;
@@ -146,8 +146,8 @@
 
         /* Animation for Current Endeavors section */
         .endeavors-content p {
-            color: black; /* Text color */
             animation: fadeZoom 2s ease-in-out;
+            font-size: 16px; /* Adjust font size for consistency */
         }
 
         @keyframes fadeZoom {
@@ -159,64 +159,38 @@
         /* Layout for Current Endeavors section */
         .endeavors-content {
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap; /* Allow wrapping if necessary */
+            flex-wrap: wrap;
+            gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
-            gap: 20px; /* Add spacing between columns */
         }
         .endeavors-content .column {
             flex: 1;
-            margin: 0;
-            padding: 20px; /* Add padding to columns */
-            background: rgb(244, 244, 244); /* Match section background */
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Center content vertically */
-            min-height: 250px; /* Ensure equal height for all columns */
+            margin: 0 10px;
         }
-        .endeavors-content p {
-            margin: 0;
-            flex: 1; /* Ensure paragraphs grow to fill column */
-            text-align: center; /* Center text inside paragraph */
-            line-height: 1.6;
-            font-size: 16px; /* Ensure consistent font size */
+        .endeavors-content h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
         }
 
         /* Layout for Objectifs section */
         .objectifs-content {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            flex-wrap: wrap; /* Allow wrapping if necessary */
             max-width: 1200px;
             margin: 0 auto;
-            gap: 20px; /* Add spacing between columns */
         }
         .objectifs-content .column {
             flex: 1;
-            margin: 0;
-            padding: 20px; /* Add padding to columns */
-            background: rgb(244, 244, 244); /* Match section background */
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Center content vertically */
-            min-height: 250px; /* Ensure equal height for all columns */
+            margin: 0 10px;
+            text-align: center;
+            max-width: 300px; /* Ensure equal width for columns */
         }
         .objectifs-content img {
             width: 100%;
-            max-width: 300px;
             border-radius: 10px;
             margin-bottom: 15px;
-        }
-        .objectifs-content p {
-            margin: 0;
-            text-align: center; /* Center text inside paragraph */
-            line-height: 1.6;
-            font-size: 16px; /* Ensure consistent font size */
         }
 
         /* Layout for Contact Us section */
@@ -240,6 +214,16 @@
         #contact h2 {
             margin-bottom: 15px;
         }
+
+        /* Bootstrap Specific Adjustments */
+        @media (max-width: 767.98px) {
+            .about-content, .vision-content {
+                flex-direction: column;
+            }
+            .vision-content {
+                flex-direction: column-reverse;
+            }
+        }
     </style>
 </head>
 <body>
@@ -257,73 +241,94 @@
     </header>
     <main>
         <section id="home">
-            <img src="image1.png" alt="Home Image">
+            <img src="image1.png" alt="Background Image">
             <div class="intro-content">
-                <h1>Welcome to Al Daleel Association</h1>
-                <p>Founded in 2018, Al Daleel Association has become a trusted name in community empowerment and sustainable development in Baalback Hermel. We are dedicated to promoting social justice, gender equality, and human rights. Our work is focused on providing resources, support, and education to marginalized communities across the region.
-</p>
+                <h2>Introduction</h2>
+                <p>
+                    Founded in 2018, Al Daleel Association has become a trusted name in community empowerment and sustainable development in Baalback Hermel. We are dedicated to promoting social justice, gender equality, and human rights. Our work is focused on providing resources, support, and education to marginalized communities across the region.
+                </p>
             </div>
         </section>
-
-        <section id="about" class="about-content">
-            <img src="images.png" alt="About Us Image">
-            <p>Founded in 2018 in Lebanon and registered as a non-profit with the Ministry of Interior (Number 1959), Al Daleel is a local civil organization. Our commitment lies in serving the community, with a particular focus on empowering marginalized groups. We are dedicated to economically and socially empowering women, encouraging their active participation in society. Moreover, our efforts extend to supporting children in their education, fostering their skills, and ensuring their protection and well-being. Al Daleel Association aspires to create a brighter future for the local community through these initiatives.
-</p>
-        </section>
-
-        <section id="our-vision" class="vision-content">
-            <p>Al Daleel Association envisions a future where women and children, regardless of background, have equal access to opportunities and resources. We aspire to lead in creating a society characterized by the empowerment of women, the well-being of children, and sustainable development. Through our unwavering commitment to fostering positive change, we aim to be a catalyst for a more just, inclusive, and prosperous community, one that is not only advanced but also more human and equitable.
-</p>
-            <img src="ourvision.png" alt="Our Vision Image">
-        </section>
-
-        <section id="our-mission" class="mission-content">
-            <p>At Al Daleel Association, our mission is to foster partnerships and collaboration with diverse stakeholders engaged in addressing the social and economic gaps for women and children. Through our work, we aim to contribute to the creation of a more developed and equitable society.
-</p>
-        </section>
-
-        <section id="current-endeavors" class="endeavors-content">
-            <div class="column">
-                <p>Empowering women economically, socially and culturally, fostering their active engagement in diverse community roles and creating a supportive environment for personal and professional growth.</p>
-            </div>
-            <div class="column">
-                <p>Supporting marginalized and vulnerable communities, the focus is on ensuring their protection, providing equal access to opportunities, and fostering gender equality.</p>
-            </div>
-            <div class="column">
-                <p>Ensuring the protection of children and providing a secure environment, our objective is to enhance their mental and physical well-being, guaranteeing equitable access to rights for all children, regardless of differences.</p>
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <img src="images.png" alt="About Us">
+                <p>
+                    Founded in 2018 in Lebanon and registered as a non-profit with the Ministry of Interior (Number 1959), Al Daleel is a local civil organization. Our commitment lies in serving the community, with a particular focus on empowering marginalized groups. We are dedicated to economically and socially empowering women, encouraging their active participation in society. Moreover, our efforts extend to supporting children in their education, fostering their skills, and ensuring their protection and well-being. Al Daleel Association aspires to create a brighter future for the local community through these initiatives.
+                </p>
             </div>
         </section>
-
-        <section id="objectifs" class="objectifs-content">
-            <div class="column">
-                <img src="obj1.png" alt="Objectif 1">
-                <p>Empowering women economically, socially and culturally, fostering their active engagement in diverse community roles and creating a supportive environment for personal and professional growth.</p>
-            </div>
-            <div class="column">
-                <img src="obj2.png" alt="Objectif 2">
-                <p>Supporting marginalized and vulnerable communities, the focus is on ensuring their protection, providing equal access to opportunities, and fostering gender equality.</p>
-            </div>
-            <div class="column">
-                <img src="obj3.png" alt="Objectif 3">
-                <p>Ensuring the protection of children and providing a secure environment, our objective is to enhance their mental and physical well-being, guaranteeing equitable access to rights for all children, regardless of differences.</p>
+        <section id="our-vision">
+            <h2>Our Vision</h2>
+            <div class="vision-content">
+                <img src="ourvision.png" alt="Our Vision">
+                <p>
+                    Al Daleel Association envisions a future where women and children, regardless of background, have equal access to opportunities and resources. We aspire to lead in creating a society characterized by the empowerment of women, the well-being of children, and sustainable development. Through our unwavering commitment to fostering positive change, we aim to be a catalyst for a more just, inclusive, and prosperous community, one that is not only advanced but also more human and equitable.
+                </p>
             </div>
         </section>
-
+        <section id="our-mission">
+            <h2>Our Mission</h2>
+            <div class="mission-content">
+                <p>
+                    At Al Daleel Association, our mission is to foster partnerships and collaboration with diverse stakeholders engaged in addressing the social and economic gaps for women and children. Through our work, we aim to contribute to the creation of a more developed and equitable society.
+                </p>
+            </div>
+        </section>
+        <section id="current-endeavors">
+            <h2>Current Endeavors</h2>
+            <div class="container">
+                <div class="row endeavors-content">
+                    <div class="col-md-6 column">
+                        <h3>Women</h3>
+                        <p>
+                            Al Daleel Association is dedicated to empowering marginalized groups of women and children. Our efforts encompass enhancing women's economic, social, and cultural empowerment, advocating for gender equality, and defending women's rights. We aim to support women in both personal and professional growth, urging their active participation in the community's decision-making processes. Our initiatives include comprehensive programs for the overall development of women, fostering solidarity, and improving communication within the community.
+                        </p>
+                    </div>
+                    <div class="col-md-6 column">
+                        <h3>Children</h3>
+                        <p>
+                            Al Daleel Association is dedicated to protecting children and providing a friendly and safe environment to foster their growth and development. Our initiatives focus on ensuring access to quality education, offering support for their emotional and psychological well-being, and creating programs that stimulate their talents and interests. We are committed to safeguarding children's rights and ensuring they have the resources and opportunities needed to thrive and reach their full potential.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="objectifs">
+            <h2>Objectifs</h2>
+            <div class="container">
+                <div class="row objectifs-content">
+                    <div class="col-md-4 column">
+                        <img src="obj1.png" alt="Objectif 1">
+                        <p>Empowering women economically, socially and culturally, fostering their active engagement in diverse community roles and creating a supportive environment for personal and professional growth.</p>
+                    </div>
+                    <div class="col-md-4 column">
+                        <img src="obj2.png" alt="Objectif 2">
+                        <p>Supporting marginalized and vulnerable communities, the focus is on ensuring their protection, providing equal access to opportunities, and fostering gender equality.</p>
+                    </div>
+                    <div class="col-md-4 column">
+                        <img src="obj3.png" alt="Objectif 3">
+                        <p>Ensuring the protection of children and providing a secure environment, our objective is to enhance their mental and physical well-being, guaranteeing equitable access to rights for all children, regardless of differences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contact">
             <div class="contact-info">
                 <h2>Contact Us</h2>
-                <p>Phone: +123 456 7890</p>
-                <p>Email: contact@aldaleel.org</p>
-                <p>Address: 123 Street, City, Country</p>
-                <p><a href="https://facebook.com/aldaleel" target="_blank" style="color: white;">Facebook</a></p>
+                <p style="color: white; background: none;">Phone: 76 844 409 / 71 942 894</p>
+                <p style="color: white; background: none;">Email: <a href="mailto:aldalilassociation@outlook.com" style="color: white;">aldalilassociation@outlook.com</a></p>
+                <p style="color: white; background: none;">Address: Younine-Al Fayda</p>
+                <p style="color: white; background: none;"><a href="https://www.facebook.com/photo/?fbid=575308201405465&set=a.5753081880721" style="color: white;" target="_blank">Facebook</a></p>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Al Daleel Association. All rights reserved.</p>
     </footer>
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
