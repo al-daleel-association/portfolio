@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Al Daleel Association</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -210,6 +212,16 @@
         #contact h2 {
             margin-bottom: 15px;
         }
+
+        /* Bootstrap Specific Adjustments */
+        @media (max-width: 767.98px) {
+            .about-content, .vision-content {
+                flex-direction: column;
+            }
+            .vision-content {
+                flex-direction: column-reverse;
+            }
+        }
     </style>
 </head>
 <body>
@@ -298,20 +310,19 @@
         <section id="contact">
             <div class="contact-info">
                 <h2>Contact Us</h2>
-                <p style="color: white;
-                background: none;" >Phone: 76 844 409 / 71 942 894</p>
-                <p style="color: white;
-                background: none;">Email: <a href="mailto:aldalilassociation@outlook.com" style="    color: white">aldalilassociation@outlook.com</a></p>
-                <p style="color: white;
-                background: none;">Address: Younine-Al Fayda</p>
-                <p style="color: white;
-                background: none;"><a href="https://www.facebook.com/photo/?fbid=575308201405465&set=a.5753081880721" style="    color: white" target="_blank">Facebook</a></p>
+                <p style="color: white; background: none;">Phone: 76 844 409 / 71 942 894</p>
+                <p style="color: white; background: none;">Email: <a href="mailto:aldalilassociation@outlook.com" style="color: white;">aldalilassociation@outlook.com</a></p>
+                <p style="color: white; background: none;">Address: Younine-Al Fayda</p>
+                <p style="color: white; background: none;"><a href="https://www.facebook.com/photo/?fbid=575308201405465&set=a.5753081880721" style="color: white;" target="_blank">Facebook</a></p>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Al Daleel Association. All rights reserved.</p>
     </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
